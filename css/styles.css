@@ -42,7 +42,7 @@ p {
 }
 
 .header-nav {
-    a display: flex;
+    display: flex;
     align-items: center;
 }
 
