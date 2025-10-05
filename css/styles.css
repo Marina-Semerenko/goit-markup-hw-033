@@ -1,3 +1,8 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -66,7 +71,7 @@ p {
 }
 
 .nav-link {
-    padding: 24 0;
+    padding: 24px 0;
     display: block;
     font-weight: 500;
     font-size: 16px;
@@ -117,14 +122,24 @@ p {
 
 .hero {
     background-color: #2e2f42;
+ padding: 188px 0;
 }
-
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   gap: 48px;
+        
+}
+ 
 .hero-text {
+      max-width: 496px;
+    text-align: center;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #fff;
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -134,7 +149,13 @@ p {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    padding: 16px 32px;
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
     cursor: pointer;
+    text-align: center;
 }
 
 .hero-btn:focus,
@@ -142,29 +163,52 @@ p {
     background-color: #404bbf;
 
 }
+                                                                                                               
+ /*section 2*/
 
-/*section 2 Features*/
-
-
+. visually-hidden {
+    color: #E2F42;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: 
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+  .features {
+    padding: 120px 0;
+  }
 .features-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
+  .features-list {
+    display: flex;
+    flex-wrap: wrap; 
+           gap: 24px;
+  }
 
+.features-item {
+     width: calc( width calc((100% - 3 * 24px) / 4));
+}
 .features-description {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
-}
-
-/* section 3 person*/
+    }
 
 .team-section {
     background-color: #f4f4fd;
+}
+.team-container{
+      display: flex;
+    align-items: center;
 }
 
 .section-title {
@@ -174,11 +218,38 @@ p {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 72px;
+}
+/*section 3*/
+.team {
+    background-color:  #f4f4f4;
+}
+.team-list {
+    display:flex;
+     gap: 24px;
+  
+}
+.team-title {
+    font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+text-transform: capitalize;
+margin-bottom: 72px;
 }
 
 .team-item {
     background-color: #fff;
-    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 0 4px 4px;
+}
+
+.team-item {
+    padding: 32px 0;
 }
 
 .member-title {
@@ -187,48 +258,88 @@ p {
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .member-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #434455;
+   
 }
 
 /*sechion 4*/
 
+
+.portfolio-container {
+    display: flex;
+    background-color: #fff;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
 .portfolio-title {
+      
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
+    font-weight: 700;
+    padding-top: 120px;
+    padding-bottom: 72px;
+    
 }
+.portfolio-list {
+    display:flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 24px;
+    width: 1128px;
+  margin-bottom: 120px;
+}
+
 
 .portfolio-item {
-    backgrond: #fff;
+    display: block;
+      width: calc((100%-48px)/3);
+}
+.portfolio-ill {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
+.portfolio-text-box {
+     padding: 32px;
+   margin-bottom: 8px;
+   text-align: left;
+   
+}
 .portfolio-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
     color: #2e2f42;
+    padding-bottom: 8px;
 }
 
 .portfolio-type {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
 }
+    
+
+
 
 /*Footer*/
 
