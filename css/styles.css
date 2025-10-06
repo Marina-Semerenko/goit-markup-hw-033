@@ -33,8 +33,8 @@ p {
     margin: 0;
 }
 
-img {
-    display: 
+.img {
+    display: block
     max-width; 100%;
 }
 
@@ -181,12 +181,12 @@ img {
     margin: -1px;
     border: 0;
     padding: 0;
-    white-space: 
+    white-space;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
-.features-section {
+.features-container {
     padding: 120px 0;
 }
   .features-list {
@@ -204,8 +204,8 @@ width: calc((100% - 72px)/4);
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    
     margin-bottom: 8px;
+    
 }
   
 .features-description {
@@ -262,9 +262,7 @@ width: calc((100% - 72px)/4);
     letter-spacing: 0.02em;
     text-align: center;
 }
-.img{
-    display: block
-}
+
 .member-text {
     font-size: 16px;
     line-height: 1.5;
@@ -275,8 +273,8 @@ width: calc((100% - 72px)/4);
 
 /*sechion 4*/
 .portfolio-container {
-    padding-top: 120px;
-    
+padding: 120px 0 120px 0;
+   
 }
 .portfolio-title {
       
@@ -295,7 +293,7 @@ width: calc((100% - 72px)/4);
     gap: 24px;
     row-gap: 48px;
     padding: 32px 16px
-    border: 1px solid #e7e9fc; 
+ 
 }
      
 .portfolio-name {
@@ -325,6 +323,8 @@ portfolio-container {
     
 .portfolio-item {
           border: 1px solid #e7e9fc; 
+          padding: 32px 16px;
+          border: 1px solid #e7e9fc;
 }
  
 
