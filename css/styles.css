@@ -220,7 +220,12 @@ width: calc((100% - 72px)/4);
 .team-section {
     background-color: #f4f4fd;  
 }
+.team-container{
+    padding: 120px 0;
+    max-width: 1128px;
+}
 .team-list {
+    border-radius: 0px 0px 4px 4px; 
     display: flex;
     gap: 24px;
 }
@@ -235,7 +240,7 @@ width: calc((100% - 72px)/4);
     margin-bottom: 72px;
 }
 .team-list .team-item{
-    flex-basis: calc((100% - 72px) / 4))
+    flex-basis: calc((100% - 72px) / 4));
 }
                                                      
 .team-item {
@@ -257,7 +262,9 @@ width: calc((100% - 72px)/4);
     letter-spacing: 0.02em;
     text-align: center;
 }
-
+.img{
+    display: block
+}
 .member-text {
     font-size: 16px;
     line-height: 1.5;
@@ -267,7 +274,10 @@ width: calc((100% - 72px)/4);
 }
 
 /*sechion 4*/
-
+.portfolio-container {
+    padding-top: 120px;
+    
+}
 .portfolio-title {
       
     font-size: 36px;
@@ -284,11 +294,10 @@ width: calc((100% - 72px)/4);
     list-style: none;
     gap: 24px;
     row-gap: 48px;
+    padding: 32px 16px
+    border: 1px solid #e7e9fc; 
 }
-   
-
-    
-
+     
 .portfolio-name {
     font-weight: 500;
     font-size: 20px;
@@ -315,7 +324,7 @@ portfolio-container {
      }
     
 .portfolio-item {
-     border-bottom: 1px solid #2e2f42;
+          border: 1px solid #e7e9fc; 
 }
  
 
