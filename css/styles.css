@@ -218,8 +218,7 @@ width: calc((100% - 72px)/4);
     }
 /*section 3*/
 .team-section {
-    background-color: #f4f4fd;
-    
+    background-color: #f4f4fd;  
 }
 .team-list {
     display: flex;
@@ -235,7 +234,10 @@ width: calc((100% - 72px)/4);
     text-transform: capitalize;
     margin-bottom: 72px;
 }
-
+.team-list .team-item{
+    flex-basis: calc((100% - 72px) / 4))
+}
+                                                     
 .team-item {
     background-color: #fff;
     display: flex;
