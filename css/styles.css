@@ -317,13 +317,17 @@ padding: 120px 0 120px 0;
         margin-left: 16px;
         margin-bottom: 32 px;
         }
- 
-portfolio-container {
+ .portfolio-container {
+   max-width: 1158px;
+   margin-left: auto;
+   margin-right: auto; 
+ }
+.container {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;}
     
-    .portfolio-list .portfolio-item{
+    .portfolio-item{
        width: calc((100% - 48px) / 3)
      }
     
