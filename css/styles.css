@@ -169,18 +169,18 @@ p {
 .hero-btn:focus,
 .hero-btn:hover {
     background-color: #404bbf;
-
 }
                                                                                                                
  /*section 2*/
 .visually-hidden {
-    color: #E2F42;
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
     border: 0;
     padding: 0;
     white-space;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;}
 
@@ -211,11 +211,11 @@ width: calc((100% - 72px)/4);
     }
 /*section 3*/
 .team-section {
-    background-color: #f4f4fd;  
+    background-color: #f4f4fd; 
+     padding: 120px 0; 
 }
 .team-container{
-    padding: 120px 0;
-    max-width: 1128px;
+      max-width: 1128px;
 }
 .team-list {
     border-radius: 0px 0px 4px 4px; 
@@ -242,13 +242,13 @@ width: calc((100% - 72px)/4);
      flex-direction: column;
      align-items: center;
      border-radius: 0 0 4px 4px;
-}
+} 
 
 .team-info {
     padding: 32px 0;
 }
 .member-title {
-    margin-bottom: 8px 
+    margin-bottom: 8px;
     font-size:   20px;
     font-weight: 500;
     line-height: 1.2;
@@ -261,16 +261,15 @@ width: calc((100% - 72px)/4);
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-   
-}
+  }
 
 /*sechion 4*/
-.portfolio-container {
-padding: 120px 0 120px 0;
-   
+.portfolio-section {
+  padding: 120px 0 120px 0;  
 }
+ 
+
 .portfolio-title {
-      
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
