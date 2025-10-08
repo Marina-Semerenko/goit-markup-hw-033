@@ -282,8 +282,7 @@ width: calc((100% - 72px)/4);
     list-style: none;
     gap: 24px;
     row-gap: 48px;
-    padding: 32px 16px; 
-}
+    }
      .portfolio-ill {
         display: block;
         width: 100%;
@@ -309,10 +308,10 @@ width: calc((100% - 72px)/4);
  .portfolio-text-box   {
      padding: 32px 16px;
     border: 1px solid #e7e9fc;
-    border-top: none;}
+    }
     
    .portfolio-list .portfolio-item {
-   width: calc((100% - 24px * 2) / 3);
+   width: calc((100% - 24px * 2 ) / 3);
      }
     
 .portfolio-item {
